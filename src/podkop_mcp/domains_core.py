@@ -21,7 +21,7 @@ MAX_DOMAIN_LENGTH = 253
 MAX_LABEL_LENGTH = 63
 _LABEL_RE = re.compile(r"^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?$")
 _TLD_RE = re.compile(r"^[a-z]{2,63}$")
-_NESTED_QUANTIFIER = re.compile(r"\((?:[^()]|\\.)*[+*]\)[+*?]")
+_NESTED_QUANTIFIER = re.compile(r"\((?:[^()\\]|\\.)*[+*]\)[+*?]")
 
 
 def is_valid_domain(value: str) -> bool:
