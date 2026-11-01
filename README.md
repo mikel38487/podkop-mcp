@@ -3,6 +3,7 @@
 <!-- mcp-name: io.github.mikel38487/podkop-mcp -->
 
 [![CI](https://github.com/mikel38487/podkop-mcp/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/mikel38487/podkop-mcp/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/podkop-mcp)](https://pypi.org/project/podkop-mcp/)
 [![Python versions](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13%20%7C%203.14-blue)](https://github.com/mikel38487/podkop-mcp/blob/main/pyproject.toml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](https://github.com/mikel38487/podkop-mcp/blob/main/LICENSE)
 
@@ -79,6 +80,14 @@ hidden behind typed MCP tools.
 - OpenWrt router with Forkop or Podkop installed
 - SSH key access to the router
 
+**Install from PyPI:**
+
+```bash
+pip install podkop-mcp
+# or run without installing
+uvx podkop-mcp
+```
+
 **Install from source:**
 
 ```bash
@@ -88,8 +97,6 @@ python -m venv .venv
 . .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -e .
 ```
-
-The package is not published on PyPI yet, so install it from source.
 
 **Configure your MCP client** (Claude Desktop, Cursor, DSH, etc.):
 

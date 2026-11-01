@@ -1,0 +1,52 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.mikel38487/podkop-mcp",
+  "title": "podkop-mcp",
+  "description": "MCP server for managing Podkop and Forkop on OpenWrt over SSH",
+  "repository": {
+    "source": "github",
+    "url": "https://github.com/mikel38487/podkop-mcp"
+  },
+  "version": "0.2.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "podkop-mcp",
+      "version": "0.2.0",
+      "runtimeHint": "uvx",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        {
+          "name": "PODKOP_MCP_SSH_HOST",
+          "description": "Router address",
+          "isRequired": true,
+          "format": "string"
+        },
+        {
+          "name": "PODKOP_MCP_SSH_USER",
+          "description": "SSH user (root on OpenWrt)",
+          "isRequired": false,
+          "format": "string"
+        },
+        {
+          "name": "PODKOP_MCP_SSH_KEY_PATH",
+          "description": "Path to the private SSH key",
+          "isRequired": false,
+          "format": "string"
+        },
+        {
+          "name": "PODKOP_MCP_HOST_KEY_POLICY",
+          "description": "reject (default), accept-new or ignore",
+          "isRequired": false,
+          "format": "string"
+        },
+        {
+          "name": "PODKOP_MCP_READ_ONLY",
+          "description": "1 blocks all writes",
+          "isRequired": false,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}

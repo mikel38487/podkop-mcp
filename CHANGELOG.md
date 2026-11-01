@@ -4,6 +4,47 @@
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-11-01
+
+Первый публичный выпуск: репозиторий подготовлен к открытию, поведение
+инструментов не менялось.
+
+### Added
+
+- CLI: `podkop-mcp --help` и `podkop-mcp --version`; без аргументов
+  запускается stdio-сервер, как раньше.
+- Полный справочник переменных `PODKOP_MCP_*` в README (все 23) и пример
+  мультироутерной конфигурации.
+- `.gitleaks.toml` и workflow `gitleaks` в CI, Dependabot для `pip` и
+  `github-actions`.
+- Community-файлы: `CODE_OF_CONDUCT.md`, шаблоны bug report и feature request,
+  `pull_request_template.md`, `config.yml`.
+- `mcp.json.posix.example` и POSIX-путь в troubleshooting.
+- `server.json` для MCP Registry и релизный workflow.
+
+### Changed
+
+- README для публичной аудитории: бейджи, маркер `mcp-name`, оговорка
+  «not affiliated», абсолютные ссылки на docs.
+- CONTRIBUTING и SECURITY двуязычные: английские версии основные, русские —
+  `*.ru.md`.
+- Метаданные пакета: SPDX `license = "MIT"`, `[project.urls]`, версия из
+  `__init__.py`, явный include для sdist.
+- CHANGELOG разложен по выпускам 0.1.0 и 0.1.1.
+- CI: `permissions`, `concurrency`, таймауты, job `build` с `twine check`.
+
+### Fixed
+
+- MCP-сервер сообщает версию пакета, а не захардкоженную `0.1.0`.
+- Примеры конфигурации используют `PODKOP_MCP_TARGET_NAME` вместо
+  несуществующей `PODKOP_MCP_DEFAULT_TARGET`.
+
+### Security
+
+- Фикстуры и live-тест обезличены: домашняя подсеть заменена на RFC 5737,
+  модель роутера убрана из документации и тестов.
+- Вся история проверена gitleaks — реальных секретов нет.
+
 ## [0.1.1] - 2026-10-30
 
 ### Added

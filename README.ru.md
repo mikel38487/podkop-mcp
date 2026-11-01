@@ -3,6 +3,7 @@
 <!-- mcp-name: io.github.mikel38487/podkop-mcp -->
 
 [![CI](https://github.com/mikel38487/podkop-mcp/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/mikel38487/podkop-mcp/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/podkop-mcp)](https://pypi.org/project/podkop-mcp/)
 [![Версии Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13%20%7C%203.14-blue)](https://github.com/mikel38487/podkop-mcp/blob/main/pyproject.toml)
 [![Лицензия: MIT](https://img.shields.io/badge/license-MIT-green)](https://github.com/mikel38487/podkop-mcp/blob/main/LICENSE)
 
@@ -77,6 +78,14 @@
 - OpenWrt с установленным Forkop или Podkop
 - SSH-доступ к роутеру по ключу
 
+**Установка из PyPI:**
+
+```bash
+pip install podkop-mcp
+# или запуск без установки
+uvx podkop-mcp
+```
+
 **Установка из исходников:**
 
 ```bash
@@ -86,8 +95,6 @@ python -m venv .venv
 . .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -e .
 ```
-
-Пакет пока не опубликован на PyPI — устанавливайте из исходников.
 
 **Настройте MCP-клиент** (Claude Desktop, Cursor, DSH и т.п.):
 
