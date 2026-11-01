@@ -14,13 +14,32 @@ from typing import Any, Literal
 
 DomainStorage = Literal["option_text", "option_multiline", "list"]
 
-DOMAIN_RE = re.compile(
-    r"^(?=.{1,253}$)(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,63}$"
-)
 ZONE_RE = re.compile(r"^\.[a-z]{2,63}$")
 PREFIXES = ("full:", "keyword:", "regex:")
 MAX_REGEX_LENGTH = 512
+MAX_DOMAIN_LENGTH = 253
+MAX_LABEL_LENGTH = 63
+_LABEL_RE = re.compile(r"^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?$")
+_TLD_RE = re.compile(r"^[a-z]{2,63}$")
 _NESTED_QUANTIFIER = re.compile(r"\((?:[^()]|\\.)*[+*]\)[+*?]")
+
+
+def is_valid_domain(value: str) -> bool:
+    """Проверить доменное имя.
+
+    Линейный проход по меткам вместо одного регулярного выражения с вложенным
+    квантификатором: на коротких доменах разницы нет, но времени выполнения
+    не зависит от расположения точек (CodeQL: py/redos).
+    """
+
+    if not 1 <= len(value) <= MAX_DOMAIN_LENGTH:
+        return False
+    labels = value.split(".")
+    if len(labels) < 2:
+        return False
+    if not _TLD_RE.fullmatch(labels[-1]):
+        return False
+    return all(_LABEL_RE.fullmatch(label) for label in labels[:-1])
 
 
 def _regex_is_safe(pattern: str) -> bool:
@@ -124,12 +143,12 @@ def is_valid_entry(entry: str) -> bool:
     if lower.startswith("keyword:"):
         return bool(entry[8:].strip())
     if lower.startswith("full:"):
-        return bool(DOMAIN_RE.fullmatch(lower[5:].strip()))
+        return is_valid_domain(lower[5:].strip())
     if entry.startswith("."):
         return bool(ZONE_RE.fullmatch(lower))
     if _is_ip_or_cidr(entry):
         return True
-    return bool(DOMAIN_RE.fullmatch(lower))
+    return is_valid_domain(lower)
 
 
 def _is_ip_or_cidr(value: str) -> bool:
