@@ -1,0 +1,513 @@
+{
+  "proxies": {
+    "GLOBAL": {
+      "all": [
+        "🇷🇺 MOW-04 Golden Falcon",
+        "🇷🇺 MOW-04 Golden Falcon H2",
+        "🇳🇱 AMS-03 Ivory Stork",
+        "🇳🇱 AMS-03 Ivory Stork H2",
+        "🇳🇱 AMS-01 Copper Marten",
+        "🇳🇱 AMS-01 Copper Marten H2",
+        "🇱🇻 RIX-01 Baltic Elk",
+        "🇱🇻 RIX-01 Baltic Elk H2",
+        "🇪🇪 TLL-01 Amber Heron",
+        "🇪🇪 TLL-01 Amber Heron H2",
+        "🇫🇮 HEL-02 Radiant Lynx",
+        "🇫🇮 HEL-02 Radiant Lynx H2",
+        "🇨🇿 PRG-01 Golden Otter",
+        "🇨🇿 PRG-01 Golden Otter H2",
+        "🇩🇪 FRA-01 Crimson Auroch",
+        "🇩🇪 FRA-01 Crimson Auroch H2",
+        "🇩🇪 FRA-03 DE Hollow Ibex",
+        "🇩🇪 FRA-03 DE Hollow Ibex H2",
+        "🇰🇿 ALA-01 Steppe Ibex",
+        "🇰🇿 ALA-01 Steppe Ibex H2",
+        "exclusion-urltest-cfg0a2898-out",
+        "exclusion-out",
+        "🇷🇺 MOW-04 Golden Falcon-1",
+        "🇷🇺 MOW-04 Golden Falcon H2-1",
+        "🇳🇱 AMS-03 Ivory Stork-1",
+        "🇳🇱 AMS-03 Ivory Stork H2-1",
+        "🇳🇱 AMS-01 Copper Marten-1",
+        "🇳🇱 AMS-01 Copper Marten H2-1",
+        "🇱🇻 RIX-01 Baltic Elk-1",
+        "🇱🇻 RIX-01 Baltic Elk H2-1",
+        "🇪🇪 TLL-01 Amber Heron-1",
+        "🇪🇪 TLL-01 Amber Heron H2-1",
+        "🇫🇮 HEL-02 Radiant Lynx-1",
+        "🇫🇮 HEL-02 Radiant Lynx H2-1",
+        "🇨🇿 PRG-01 Golden Otter-1",
+        "🇨🇿 PRG-01 Golden Otter H2-1",
+        "🇩🇪 FRA-01 Crimson Auroch-1",
+        "🇩🇪 FRA-01 Crimson Auroch H2-1",
+        "🇩🇪 FRA-03 DE Hollow Ibex-1",
+        "🇩🇪 FRA-03 DE Hollow Ibex H2-1",
+        "🇰🇿 ALA-01 Steppe Ibex-1",
+        "🇰🇿 ALA-01 Steppe Ibex H2-1",
+        "main-urltest-cfg082898-out",
+        "main-out"
+      ],
+      "history": [],
+      "name": "GLOBAL",
+      "now": "direct-out",
+      "type": "Fallback",
+      "udp": true
+    },
+    "direct-out": {
+      "type": "Direct",
+      "name": "direct-out",
+      "udp": true,
+      "history": []
+    },
+    "bypass-out": {
+      "type": "Direct",
+      "name": "bypass-out",
+      "udp": true,
+      "history": []
+    },
+    "🇷🇺 MOW-04 Golden Falcon": {
+      "type": "VLESS",
+      "name": "🇷🇺 MOW-04 Golden Falcon",
+      "udp": true,
+      "history": [
+        {
+          "time": "2026-10-29T00:05:47.59493844+03:00",
+          "delay": 235
+        }
+      ]
+    },
+    "🇷🇺 MOW-04 Golden Falcon H2": {
+      "type": "Hysteria2",
+      "name": "🇷🇺 MOW-04 Golden Falcon H2",
+      "udp": true,
+      "history": [
+        {
+          "time": "2026-10-29T00:05:47.595456799+03:00",
+          "delay": 271
+        }
+      ]
+    },
+    "🇳🇱 AMS-03 Ivory Stork": {
+      "type": "VLESS",
+      "name": "🇳🇱 AMS-03 Ivory Stork",
+      "udp": true,
+      "history": []
+    },
+    "🇳🇱 AMS-03 Ivory Stork H2": {
+      "type": "Hysteria2",
+      "name": "🇳🇱 AMS-03 Ivory Stork H2",
+      "udp": true,
+      "history": []
+    },
+    "🇳🇱 AMS-01 Copper Marten": {
+      "type": "VLESS",
+      "name": "🇳🇱 AMS-01 Copper Marten",
+      "udp": true,
+      "history": []
+    },
+    "🇳🇱 AMS-01 Copper Marten H2": {
+      "type": "Hysteria2",
+      "name": "🇳🇱 AMS-01 Copper Marten H2",
+      "udp": true,
+      "history": []
+    },
+    "🇱🇻 RIX-01 Baltic Elk": {
+      "type": "VLESS",
+      "name": "🇱🇻 RIX-01 Baltic Elk",
+      "udp": true,
+      "history": []
+    },
+    "🇱🇻 RIX-01 Baltic Elk H2": {
+      "type": "Hysteria2",
+      "name": "🇱🇻 RIX-01 Baltic Elk H2",
+      "udp": true,
+      "history": []
+    },
+    "🇪🇪 TLL-01 Amber Heron": {
+      "type": "VLESS",
+      "name": "🇪🇪 TLL-01 Amber Heron",
+      "udp": true,
+      "history": []
+    },
+    "🇪🇪 TLL-01 Amber Heron H2": {
+      "type": "Hysteria2",
+      "name": "🇪🇪 TLL-01 Amber Heron H2",
+      "udp": true,
+      "history": []
+    },
+    "🇫🇮 HEL-02 Radiant Lynx": {
+      "type": "VLESS",
+      "name": "🇫🇮 HEL-02 Radiant Lynx",
+      "udp": true,
+      "history": []
+    },
+    "🇫🇮 HEL-02 Radiant Lynx H2": {
+      "type": "Hysteria2",
+      "name": "🇫🇮 HEL-02 Radiant Lynx H2",
+      "udp": true,
+      "history": []
+    },
+    "🇨🇿 PRG-01 Golden Otter": {
+      "type": "VLESS",
+      "name": "🇨🇿 PRG-01 Golden Otter",
+      "udp": true,
+      "history": []
+    },
+    "🇨🇿 PRG-01 Golden Otter H2": {
+      "type": "Hysteria2",
+      "name": "🇨🇿 PRG-01 Golden Otter H2",
+      "udp": true,
+      "history": []
+    },
+    "🇩🇪 FRA-01 Crimson Auroch": {
+      "type": "VLESS",
+      "name": "🇩🇪 FRA-01 Crimson Auroch",
+      "udp": true,
+      "history": []
+    },
+    "🇩🇪 FRA-01 Crimson Auroch H2": {
+      "type": "Hysteria2",
+      "name": "🇩🇪 FRA-01 Crimson Auroch H2",
+      "udp": true,
+      "history": []
+    },
+    "🇩🇪 FRA-03 DE Hollow Ibex": {
+      "type": "VLESS",
+      "name": "🇩🇪 FRA-03 DE Hollow Ibex",
+      "udp": true,
+      "history": []
+    },
+    "🇩🇪 FRA-03 DE Hollow Ibex H2": {
+      "type": "Hysteria2",
+      "name": "🇩🇪 FRA-03 DE Hollow Ibex H2",
+      "udp": true,
+      "history": []
+    },
+    "🇰🇿 ALA-01 Steppe Ibex": {
+      "type": "VLESS",
+      "name": "🇰🇿 ALA-01 Steppe Ibex",
+      "udp": true,
+      "history": []
+    },
+    "🇰🇿 ALA-01 Steppe Ibex H2": {
+      "type": "Hysteria2",
+      "name": "🇰🇿 ALA-01 Steppe Ibex H2",
+      "udp": true,
+      "history": []
+    },
+    "exclusion-urltest-cfg0a2898-out": {
+      "type": "URLTest",
+      "name": "exclusion-urltest-cfg0a2898-out",
+      "udp": true,
+      "history": [
+        {
+          "time": "2026-10-29T00:05:47.59493844+03:00",
+          "delay": 235
+        }
+      ],
+      "now": "🇷🇺 MOW-04 Golden Falcon",
+      "all": [
+        "🇷🇺 MOW-04 Golden Falcon",
+        "🇷🇺 MOW-04 Golden Falcon H2"
+      ]
+    },
+    "exclusion-out": {
+      "type": "Selector",
+      "name": "exclusion-out",
+      "udp": true,
+      "history": [
+        {
+          "time": "2026-10-29T00:05:47.59493844+03:00",
+          "delay": 235
+        }
+      ],
+      "now": "exclusion-urltest-cfg0a2898-out",
+      "all": [
+        "🇷🇺 MOW-04 Golden Falcon",
+        "🇷🇺 MOW-04 Golden Falcon H2",
+        "exclusion-urltest-cfg0a2898-out"
+      ]
+    },
+    "🇷🇺 MOW-04 Golden Falcon-1": {
+      "type": "VLESS",
+      "name": "🇷🇺 MOW-04 Golden Falcon-1",
+      "udp": true,
+      "history": []
+    },
+    "🇷🇺 MOW-04 Golden Falcon H2-1": {
+      "type": "Hysteria2",
+      "name": "🇷🇺 MOW-04 Golden Falcon H2-1",
+      "udp": true,
+      "history": []
+    },
+    "🇳🇱 AMS-03 Ivory Stork-1": {
+      "type": "VLESS",
+      "name": "🇳🇱 AMS-03 Ivory Stork-1",
+      "udp": true,
+      "history": [
+        {
+          "time": "2026-10-28T23:25:47.453606363+03:00",
+          "delay": 153
+        }
+      ]
+    },
+    "🇳🇱 AMS-03 Ivory Stork H2-1": {
+      "type": "Hysteria2",
+      "name": "🇳🇱 AMS-03 Ivory Stork H2-1",
+      "udp": true,
+      "history": [
+        {
+          "time": "2026-10-28T23:25:47.541086259+03:00",
+          "delay": 176
+        }
+      ]
+    },
+    "🇳🇱 AMS-01 Copper Marten-1": {
+      "type": "VLESS",
+      "name": "🇳🇱 AMS-01 Copper Marten-1",
+      "udp": true,
+      "history": [
+        {
+          "time": "2026-10-28T23:25:47.532541758+03:00",
+          "delay": 214
+        }
+      ]
+    },
+    "🇳🇱 AMS-01 Copper Marten H2-1": {
+      "type": "Hysteria2",
+      "name": "🇳🇱 AMS-01 Copper Marten H2-1",
+      "udp": true,
+      "history": [
+        {
+          "time": "2026-10-28T23:25:47.587937093+03:00",
+          "delay": 220
+        }
+      ]
+    },
+    "🇱🇻 RIX-01 Baltic Elk-1": {
+      "type": "VLESS",
+      "name": "🇱🇻 RIX-01 Baltic Elk-1",
+      "udp": true,
+      "history": [
+        {
+          "time": "2026-10-28T23:25:47.378669419+03:00",
+          "delay": 195
+        }
+      ]
+    },
+    "🇱🇻 RIX-01 Baltic Elk H2-1": {
+      "type": "Hysteria2",
+      "name": "🇱🇻 RIX-01 Baltic Elk H2-1",
+      "udp": true,
+      "history": [
+        {
+          "time": "2026-10-28T23:25:47.729139679+03:00",
+          "delay": 249
+        }
+      ]
+    },
+    "🇪🇪 TLL-01 Amber Heron-1": {
+      "type": "VLESS",
+      "name": "🇪🇪 TLL-01 Amber Heron-1",
+      "udp": true,
+      "history": [
+        {
+          "time": "2026-10-28T23:25:47.919400568+03:00",
+          "delay": 298
+        }
+      ]
+    },
+    "🇪🇪 TLL-01 Amber Heron H2-1": {
+      "type": "Hysteria2",
+      "name": "🇪🇪 TLL-01 Amber Heron H2-1",
+      "udp": true,
+      "history": [
+        {
+          "time": "2026-10-28T23:25:48.026235642+03:00",
+          "delay": 270
+        }
+      ]
+    },
+    "🇫🇮 HEL-02 Radiant Lynx-1": {
+      "type": "VLESS",
+      "name": "🇫🇮 HEL-02 Radiant Lynx-1",
+      "udp": true,
+      "history": [
+        {
+          "time": "2026-10-28T23:25:47.853732689+03:00",
+          "delay": 170
+        }
+      ]
+    },
+    "🇫🇮 HEL-02 Radiant Lynx H2-1": {
+      "type": "Hysteria2",
+      "name": "🇫🇮 HEL-02 Radiant Lynx H2-1",
+      "udp": true,
+      "history": [
+        {
+          "time": "2026-10-28T23:25:47.916806925+03:00",
+          "delay": 160
+        }
+      ]
+    },
+    "🇨🇿 PRG-01 Golden Otter-1": {
+      "type": "VLESS",
+      "name": "🇨🇿 PRG-01 Golden Otter-1",
+      "udp": true,
+      "history": [
+        {
+          "time": "2026-10-28T23:25:47.428755824+03:00",
+          "delay": 175
+        }
+      ]
+    },
+    "🇨🇿 PRG-01 Golden Otter H2-1": {
+      "type": "Hysteria2",
+      "name": "🇨🇿 PRG-01 Golden Otter H2-1",
+      "udp": true,
+      "history": [
+        {
+          "time": "2026-10-28T23:25:47.508877821+03:00",
+          "delay": 174
+        }
+      ]
+    },
+    "🇩🇪 FRA-01 Crimson Auroch-1": {
+      "type": "VLESS",
+      "name": "🇩🇪 FRA-01 Crimson Auroch-1",
+      "udp": true,
+      "history": [
+        {
+          "time": "2026-10-28T23:25:47.679458759+03:00",
+          "delay": 309
+        }
+      ]
+    },
+    "🇩🇪 FRA-01 Crimson Auroch H2-1": {
+      "type": "Hysteria2",
+      "name": "🇩🇪 FRA-01 Crimson Auroch H2-1",
+      "udp": true,
+      "history": [
+        {
+          "time": "2026-10-28T23:25:47.767159017+03:00",
+          "delay": 360
+        }
+      ]
+    },
+    "🇩🇪 FRA-03 DE Hollow Ibex-1": {
+      "type": "VLESS",
+      "name": "🇩🇪 FRA-03 DE Hollow Ibex-1",
+      "udp": true,
+      "history": [
+        {
+          "time": "2026-10-28T23:25:47.891389246+03:00",
+          "delay": 164
+        }
+      ]
+    },
+    "🇩🇪 FRA-03 DE Hollow Ibex H2-1": {
+      "type": "Hysteria2",
+      "name": "🇩🇪 FRA-03 DE Hollow Ibex H2-1",
+      "udp": true,
+      "history": [
+        {
+          "time": "2026-10-28T23:25:47.948083595+03:00",
+          "delay": 172
+        }
+      ]
+    },
+    "🇰🇿 ALA-01 Steppe Ibex-1": {
+      "type": "VLESS",
+      "name": "🇰🇿 ALA-01 Steppe Ibex-1",
+      "udp": true,
+      "history": [
+        {
+          "time": "2026-10-28T23:25:48.258772925+03:00",
+          "delay": 424
+        }
+      ]
+    },
+    "🇰🇿 ALA-01 Steppe Ibex H2-1": {
+      "type": "Hysteria2",
+      "name": "🇰🇿 ALA-01 Steppe Ibex H2-1",
+      "udp": true,
+      "history": [
+        {
+          "time": "2026-10-28T23:25:47.904718932+03:00",
+          "delay": 522
+        }
+      ]
+    },
+    "main-urltest-cfg082898-out": {
+      "type": "URLTest",
+      "name": "main-urltest-cfg082898-out",
+      "udp": true,
+      "history": [
+        {
+          "time": "2026-10-28T23:25:47.453606363+03:00",
+          "delay": 153
+        }
+      ],
+      "now": "🇳🇱 AMS-03 Ivory Stork-1",
+      "all": [
+        "🇳🇱 AMS-03 Ivory Stork-1",
+        "🇳🇱 AMS-03 Ivory Stork H2-1",
+        "🇳🇱 AMS-01 Copper Marten-1",
+        "🇳🇱 AMS-01 Copper Marten H2-1",
+        "🇱🇻 RIX-01 Baltic Elk-1",
+        "🇱🇻 RIX-01 Baltic Elk H2-1",
+        "🇪🇪 TLL-01 Amber Heron-1",
+        "🇪🇪 TLL-01 Amber Heron H2-1",
+        "🇫🇮 HEL-02 Radiant Lynx-1",
+        "🇫🇮 HEL-02 Radiant Lynx H2-1",
+        "🇨🇿 PRG-01 Golden Otter-1",
+        "🇨🇿 PRG-01 Golden Otter H2-1",
+        "🇩🇪 FRA-01 Crimson Auroch-1",
+        "🇩🇪 FRA-01 Crimson Auroch H2-1",
+        "🇩🇪 FRA-03 DE Hollow Ibex-1",
+        "🇩🇪 FRA-03 DE Hollow Ibex H2-1",
+        "🇰🇿 ALA-01 Steppe Ibex-1",
+        "🇰🇿 ALA-01 Steppe Ibex H2-1"
+      ]
+    },
+    "main-out": {
+      "type": "Selector",
+      "name": "main-out",
+      "udp": true,
+      "history": [
+        {
+          "time": "2026-10-28T23:25:47.729139679+03:00",
+          "delay": 249
+        }
+      ],
+      "now": "🇱🇻 RIX-01 Baltic Elk H2-1",
+      "all": [
+        "🇳🇱 AMS-03 Ivory Stork-1",
+        "🇳🇱 AMS-03 Ivory Stork H2-1",
+        "🇳🇱 AMS-01 Copper Marten-1",
+        "🇳🇱 AMS-01 Copper Marten H2-1",
+        "🇱🇻 RIX-01 Baltic Elk-1",
+        "🇱🇻 RIX-01 Baltic Elk H2-1",
+        "🇪🇪 TLL-01 Amber Heron-1",
+        "🇪🇪 TLL-01 Amber Heron H2-1",
+        "🇫🇮 HEL-02 Radiant Lynx-1",
+        "🇫🇮 HEL-02 Radiant Lynx H2-1",
+        "🇨🇿 PRG-01 Golden Otter-1",
+        "🇨🇿 PRG-01 Golden Otter H2-1",
+        "🇩🇪 FRA-01 Crimson Auroch-1",
+        "🇩🇪 FRA-01 Crimson Auroch H2-1",
+        "🇩🇪 FRA-03 DE Hollow Ibex-1",
+        "🇩🇪 FRA-03 DE Hollow Ibex H2-1",
+        "🇰🇿 ALA-01 Steppe Ibex-1",
+        "🇰🇿 ALA-01 Steppe Ibex H2-1",
+        "main-urltest-cfg082898-out"
+      ]
+    },
+    "Compatible": {
+      "type": "Direct",
+      "name": "Compatible",
+      "udp": true,
+      "history": []
+    }
+  }
+}

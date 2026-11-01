@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "podkop": {
+      "command": "podkop-mcp",
+      "args": [],
+      "env": {
+        "PODKOP_MCP_SSH_HOST": "192.168.1.1",
+        "PODKOP_MCP_SSH_PORT": "22",
+        "PODKOP_MCP_SSH_USER": "root",
+        "PODKOP_MCP_SSH_KEY_PATH": "C:/Users/<user>/.ssh/router_key",
+        "PODKOP_MCP_KNOWN_HOSTS": "C:/Users/<user>/.ssh/known_hosts",
+        "PODKOP_MCP_HOST_KEY_POLICY": "reject",
+        "PODKOP_MCP_TARGET_NAME": "router",
+        "PODKOP_MCP_LOG_LEVEL": "INFO"
+      }
+    }
+  }
+}

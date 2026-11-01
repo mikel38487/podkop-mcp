@@ -1,0 +1,38 @@
+#!/bin/sh
+# Заглушка CLI Forkop для Docker-эмулятора.
+# Поддерживает только команды, которые нужны podkop-mcp для detect/health.
+cmd="$1"
+shift 2>/dev/null || true
+
+case "$cmd" in
+    show_version)
+        cat /etc/forkop-version 2>/dev/null || echo "1.0.5"
+        ;;
+    show_config)
+        cat /etc/config/forkop
+        ;;
+    get_status)
+        if [ -f /tmp/forkop-stopped ]; then
+            echo '{"running":0,"enabled":1,"status":"stopped","dns_configured":0}'
+        else
+            echo '{"running":1,"enabled":1,"status":"running & enabled","dns_configured":1}'
+        fi
+        ;;
+    get_system_info)
+        printf '{"forkop_version":"%s","sing_box_version":"1.14.1-extended-2.7.2","zapret2_installed":1,"openwrt_version":"OpenWrt 25.12.6","device_model":"docker-emulator"}' \
+            "$(cat /etc/forkop-version 2>/dev/null || echo 1.0.5)"
+        ;;
+    check_sing_box)
+        echo '{"sing_box_installed":1,"sing_box_version_ok":1,"sing_box_process_running":1,"sing_box_ports_listening":1}'
+        ;;
+    check_fakeip)
+        echo '{"fakeip":true,"IP":"198.18.0.2"}'
+        ;;
+    clash_api|clash_summary)
+        echo '{"connections":[],"downloadTotal":0,"uploadTotal":0,"proxies":{}}'
+        ;;
+    *)
+        echo "unsupported command: $cmd" >&2
+        exit 1
+        ;;
+esac

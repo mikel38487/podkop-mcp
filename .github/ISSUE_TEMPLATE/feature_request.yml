@@ -1,0 +1,38 @@
+name: Feature request
+description: Suggest an improvement or a new capability
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!NOTE]
+        > podkop-mcp stays read-only by default. Mutating tools only return a
+        > dry-run preview unless the caller passes `apply=true`, and
+        > `PODKOP_MCP_READ_ONLY=1` blocks every write. Requests that would make
+        > the server change the router without an explicit opt-in are out of
+        > scope.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What are you trying to do, and what gets in the way?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed solution
+      description: What should the server do instead? Name the tool or option if you can.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Other approaches or workarounds you tried or thought about.
+    validations:
+      required: true

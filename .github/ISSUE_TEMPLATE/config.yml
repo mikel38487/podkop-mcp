@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security policy
+    url: https://github.com/mikel38487/podkop-mcp/security/policy
+    about: Report a vulnerability privately. Do not open a public issue with secrets.
+  - name: Documentation
+    url: https://github.com/mikel38487/podkop-mcp#documentation
+    about: Tool reference, architecture, compatibility and troubleshooting.

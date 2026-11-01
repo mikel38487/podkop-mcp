@@ -1,0 +1,195 @@
+{
+  "connections": [
+    {
+      "chains": [
+        "🇱🇻 RIX-01 Baltic Elk H2-1",
+        "main-out"
+      ],
+      "download": 3293,
+      "id": "937122b8-03f2-4c49-b0bc-8cb6c5711fd8",
+      "metadata": {
+        "destinationIP": "",
+        "destinationPort": "443",
+        "dnsMode": "normal",
+        "host": "spclient.wg.spotify.com",
+        "network": "tcp",
+        "processPath": "",
+        "sourceIP": "192.0.2.100",
+        "sourcePort": "63315",
+        "type": "tproxy/tproxy-in"
+      },
+      "rule": "inbound=[tproxy-in tproxy6-in] domain_suffix=[game8.co applovin.com hnetwork-live.com...] rule_set=[main-telegram-community-ruleset main-tiktok-community-ruleset main-geoblock-community-ruleset main-block-community-ruleset main-porn-community-ruleset main-news-community-ruleset main-anime-community-ruleset main-meta-community-ruleset main-twitter-community-ruleset main-hdrezka-community-ruleset main-google_ai-community-ruleset main-supercell-community-ruleset] => route(main-out)",
+      "rulePayload": "",
+      "start": "2026-10-29T00:09:23.12360222+03:00",
+      "upload": 11182
+    },
+    {
+      "chains": [
+        "🇷🇺 MOW-04 Golden Falcon",
+        "exclusion-urltest-cfg0a2898-out",
+        "exclusion-out"
+      ],
+      "download": 3976,
+      "id": "b68720c4-64a3-46b2-bdca-5c86b08c2fba",
+      "metadata": {
+        "destinationIP": "",
+        "destinationPort": "443",
+        "dnsMode": "normal",
+        "host": "finland14043.discord.media",
+        "network": "tcp",
+        "processPath": "",
+        "sourceIP": "192.0.2.101",
+        "sourcePort": "61717",
+        "type": "tproxy/tproxy-in"
+      },
+      "rule": "inbound=[tproxy-in tproxy6-in] rule_set=[exclusion-discord-community-ruleset exclusion-youtube-community-ruleset] => route(exclusion-out)",
+      "rulePayload": "",
+      "start": "2026-10-29T00:17:23.999796174+03:00",
+      "upload": 4199
+    },
+    {
+      "chains": [
+        "🇱🇻 RIX-01 Baltic Elk H2-1",
+        "main-out"
+      ],
+      "download": 6805,
+      "id": "f94cb52b-f128-449a-8276-ee385eb73b69",
+      "metadata": {
+        "destinationIP": "149.154.167.220",
+        "destinationPort": "443",
+        "dnsMode": "normal",
+        "host": "kws2.web.telegram.org",
+        "network": "tcp",
+        "processPath": "",
+        "sourceIP": "192.0.2.102",
+        "sourcePort": "57470",
+        "type": "tproxy/tproxy-in"
+      },
+      "rule": "inbound=[tproxy-in tproxy6-in] domain_suffix=[game8.co applovin.com hnetwork-live.com...] rule_set=[main-telegram-community-ruleset main-tiktok-community-ruleset main-geoblock-community-ruleset main-block-community-ruleset main-porn-community-ruleset main-news-community-ruleset main-anime-community-ruleset main-meta-community-ruleset main-twitter-community-ruleset main-hdrezka-community-ruleset main-google_ai-community-ruleset main-supercell-community-ruleset] => route(main-out)",
+      "rulePayload": "",
+      "start": "2026-10-29T00:21:08.117565199+03:00",
+      "upload": 836
+    },
+    {
+      "chains": [
+        "🇷🇺 MOW-04 Golden Falcon",
+        "exclusion-urltest-cfg0a2898-out",
+        "exclusion-out"
+      ],
+      "download": 10967,
+      "id": "0b5fc490-c51a-48af-bb36-751232c3fac1",
+      "metadata": {
+        "destinationIP": "",
+        "destinationPort": "443",
+        "dnsMode": "normal",
+        "host": "gateway.discord.gg",
+        "network": "tcp",
+        "processPath": "",
+        "sourceIP": "192.0.2.103",
+        "sourcePort": "62802",
+        "type": "tproxy/tproxy-in"
+      },
+      "rule": "inbound=[tproxy-in tproxy6-in] rule_set=[exclusion-discord-community-ruleset exclusion-youtube-community-ruleset] => route(exclusion-out)",
+      "rulePayload": "",
+      "start": "2026-10-29T00:17:23.42942635+03:00",
+      "upload": 5151
+    },
+    {
+      "chains": [
+        "🇷🇺 MOW-04 Golden Falcon",
+        "exclusion-urltest-cfg0a2898-out",
+        "exclusion-out"
+      ],
+      "download": 552273,
+      "id": "378639d8-9166-45ba-8868-25726559d86f",
+      "metadata": {
+        "destinationIP": "",
+        "destinationPort": "443",
+        "dnsMode": "normal",
+        "host": "www.youtube.com",
+        "network": "tcp",
+        "processPath": "",
+        "sourceIP": "192.0.2.104",
+        "sourcePort": "54994",
+        "type": "tproxy/tproxy-in"
+      },
+      "rule": "inbound=[tproxy-in tproxy6-in] rule_set=[exclusion-discord-community-ruleset exclusion-youtube-community-ruleset] => route(exclusion-out)",
+      "rulePayload": "",
+      "start": "2026-10-29T00:17:27.015028136+03:00",
+      "upload": 449326
+    },
+    {
+      "chains": [
+        "🇱🇻 RIX-01 Baltic Elk H2-1",
+        "main-out"
+      ],
+      "download": 6805,
+      "id": "75e29a7e-5a67-4f07-aea2-f1e97bbe5b42",
+      "metadata": {
+        "destinationIP": "149.154.167.220",
+        "destinationPort": "443",
+        "dnsMode": "normal",
+        "host": "kws2.web.telegram.org",
+        "network": "tcp",
+        "processPath": "",
+        "sourceIP": "192.0.2.100",
+        "sourcePort": "51425",
+        "type": "tproxy/tproxy-in"
+      },
+      "rule": "inbound=[tproxy-in tproxy6-in] domain_suffix=[game8.co applovin.com hnetwork-live.com...] rule_set=[main-telegram-community-ruleset main-tiktok-community-ruleset main-geoblock-community-ruleset main-block-community-ruleset main-porn-community-ruleset main-news-community-ruleset main-anime-community-ruleset main-meta-community-ruleset main-twitter-community-ruleset main-hdrezka-community-ruleset main-google_ai-community-ruleset main-supercell-community-ruleset] => route(main-out)",
+      "rulePayload": "",
+      "start": "2026-10-29T00:21:09.233600843+03:00",
+      "upload": 836
+    },
+    {
+      "chains": [
+        "🇷🇺 MOW-04 Golden Falcon",
+        "exclusion-urltest-cfg0a2898-out",
+        "exclusion-out"
+      ],
+      "download": 188227,
+      "id": "28256989-2176-4a07-9ec9-605b6cea37b6",
+      "metadata": {
+        "destinationIP": "104.29.159.138",
+        "destinationPort": "19341",
+        "dnsMode": "normal",
+        "host": "",
+        "network": "udp",
+        "processPath": "",
+        "sourceIP": "192.0.2.101",
+        "sourcePort": "62277",
+        "type": "tproxy/tproxy-in"
+      },
+      "rule": "inbound=[tproxy-in tproxy6-in] rule_set=[exclusion-discord-community-ruleset exclusion-youtube-community-ruleset] => route(exclusion-out)",
+      "rulePayload": "",
+      "start": "2026-10-29T00:21:14.123624839+03:00",
+      "upload": 18567
+    },
+    {
+      "chains": [
+        "🇱🇻 RIX-01 Baltic Elk H2-1",
+        "main-out"
+      ],
+      "download": 14583,
+      "id": "9a54750c-0fa6-4813-bf2a-710272391d2e",
+      "metadata": {
+        "destinationIP": "",
+        "destinationPort": "443",
+        "dnsMode": "normal",
+        "host": "gew1-dealer.g2.spotify.com",
+        "network": "tcp",
+        "processPath": "",
+        "sourceIP": "192.0.2.102",
+        "sourcePort": "63407",
+        "type": "tproxy/tproxy-in"
+      },
+      "rule": "inbound=[tproxy-in tproxy6-in] domain_suffix=[game8.co applovin.com hnetwork-live.com...] rule_set=[main-telegram-community-ruleset main-tiktok-community-ruleset main-geoblock-community-ruleset main-block-community-ruleset main-porn-community-ruleset main-news-community-ruleset main-anime-community-ruleset main-meta-community-ruleset main-twitter-community-ruleset main-hdrezka-community-ruleset main-google_ai-community-ruleset main-supercell-community-ruleset] => route(main-out)",
+      "rulePayload": "",
+      "start": "2026-10-28T23:41:30.402177054+03:00",
+      "upload": 3551
+    }
+  ],
+  "downloadTotal": 683663954,
+  "memory": 33357824,
+  "uploadTotal": 1252052823
+}

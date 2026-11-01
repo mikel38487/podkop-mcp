@@ -1,0 +1,224 @@
+{
+  "values": {
+    "settings": {
+      ".anonymous": false,
+      ".type": "settings",
+      ".name": "settings",
+      ".index": 0,
+      "config_version": "1.0.5",
+      "applied_migrations": [
+        "interface_sections",
+        "enable_component_checks",
+        "http_connection_urls"
+      ],
+      "dns_type": "udp",
+      "dns_server": [
+        "77.88.8.8"
+      ],
+      "bootstrap_dns_server": [
+        "77.88.8.8"
+      ],
+      "dns_check_interval": "10s",
+      "dns_recovery_check_interval": "60s",
+      "dns_check_timeout": "2s",
+      "dns_rewrite_ttl": "60",
+      "dns_strategy": "prefer_ipv4",
+      "dns_detour_enabled": "0",
+      "source_network_interfaces": [
+        "br-lan"
+      ],
+      "enable_output_network_interface": "0",
+      "enable_badwan_interface_monitoring": "0",
+      "enable_yacd": "1",
+      "disable_quic": "0",
+      "list_update_enabled": "1",
+      "update_interval": "1d",
+      "component_update_check_enabled": "1",
+      "component_update_check_interval": "1d",
+      "latency_test_url": "https://www.gstatic.com/generate_204",
+      "download_lists_via_proxy": "0",
+      "download_components_via_proxy": "0",
+      "dont_touch_dhcp": "0",
+      "config_path": "/etc/sing-box/config.json",
+      "cache_path": "/tmp/sing-box/cache.db",
+      "log_level": "warn",
+      "exclude_ntp": "0",
+      "shutdown_correctly": "0",
+      "enable_yacd_wan_access": "0",
+      "enabled": "1"
+    },
+    "AI": {
+      ".anonymous": false,
+      ".type": "section",
+      ".name": "AI",
+      ".index": 1,
+      "enabled": "0",
+      "action": "dns",
+      "dns_type": "doh",
+      "dns_server": "xbox-dns.ru/dns-query",
+      "dns_detour_enabled": "0",
+      "domain": "chatgpt.com\nopenai.com\ngrok.com",
+      "community_lists": [
+        "google_ai",
+        "github"
+      ]
+    },
+    "youtube": {
+      ".anonymous": false,
+      ".type": "section",
+      ".name": "youtube",
+      ".index": 2,
+      "enabled": "0",
+      "action": "zapret2",
+      "mixed_proxy_enabled": "0",
+      "nfqws2_opt": "--blob=tls_google:@/opt/zapret2/files/fake/tls_clienthello_www_google_com.bin --blob=quic_google:@/opt/zapret2/files/fake/quic_initial_www_google_com.bin --ctrack-disable=0 --filter-tcp=443 --filter-l7=tls --out-range=-d10 --payload=tls_client_hello --lua-desync=fake:blob=tls_google:tcp_ts=-600000:tcp_ts_up:repeats=8 --lua-desync=multisplit:pos=1:seqovl=681:seqovl_pattern=tls_google --new --filter-udp=443 --filter-l7=quic --payload=quic_initial --lua-desync=fake:blob=quic_google:repeats=11"
+    },
+    "zapret": {
+      ".anonymous": false,
+      ".type": "section",
+      ".name": "zapret",
+      ".index": 3,
+      "enabled": "0",
+      "action": "zapret2",
+      "mixed_proxy_enabled": "0",
+      "nfqws2_opt": "--blob=tls_max:@/opt/zapret2/files/fake/tls_clienthello_max_ru.bin --blob=stun:@/opt/zapret2/files/fake/stun.bin --blob=quic_google:@/opt/zapret2/files/fake/quic_initial_www_google_com.bin --ctrack-disable=0 --filter-tcp=443 --filter-l7=tls --out-range=-d10 --payload=tls_client_hello --lua-desync=fake:blob=stun:tcp_ts=-600000:tcp_ts_up:repeats=8 --lua-desync=multisplit:pos=1:seqovl=664:seqovl_pattern=tls_max --new --filter-tcp=2053,2083,2087,2096,8443 --filter-l7=tls --out-range=-d10 --payload=tls_client_hello --lua-desync=fake:blob=stun:tcp_ts=-600000:tcp_ts_up:repeats=8 --lua-desync=multisplit:pos=1:seqovl=681:seqovl_pattern=tls_max --new --filter-udp=443 --filter-l7=quic --payload=quic_initial --lua-desync=fake:blob=quic_google:repeats=11 --new --filter-udp=19294-19344,50000-50100 --filter-l7=discord,stun --payload=stun,discord_ip_discovery --lua-desync=fake:blob=stun:repeats=6",
+      "label": "zapret-discord",
+      "community_lists": [
+        "discord"
+      ]
+    },
+    "exclusion": {
+      ".anonymous": false,
+      ".type": "section",
+      ".name": "exclusion",
+      ".index": 4,
+      "enabled": "1",
+      "action": "connection",
+      "outbound_detour_enabled": "0",
+      "sort_by_latency": "0",
+      "mixed_proxy_enabled": "0",
+      "resolve_real_ip_for_routing": "0",
+      "dashboard_filter_mode": "mixed",
+      "dashboard_detect_server_country": "flag_emoji",
+      "dashboard_include_countries": [
+        "RU"
+      ],
+      "dashboard_include_proxy_parameters": "0",
+      "dashboard_exclude_proxy_parameters": "0",
+      "community_lists": [
+        "discord",
+        "youtube"
+      ]
+    },
+    "main": {
+      ".anonymous": false,
+      ".type": "section",
+      ".name": "main",
+      ".index": 5,
+      "enabled": "1",
+      "action": "connection",
+      "outbound_detour_enabled": "0",
+      "sort_by_latency": "0",
+      "mixed_proxy_enabled": "0",
+      "resolve_real_ip_for_routing": "0",
+      "dashboard_filter_mode": "exclude",
+      "dashboard_detect_server_country": "flag_emoji",
+      "dashboard_exclude_countries": [
+        "RU"
+      ],
+      "dashboard_exclude_proxy_parameters": "0",
+      "community_lists": [
+        "telegram",
+        "tiktok",
+        "geoblock",
+        "block",
+        "porn",
+        "news",
+        "anime",
+        "meta",
+        "twitter",
+        "hdrezka",
+        "google_ai",
+        "supercell"
+      ],
+      "domain": "game8.co applovin.com hnetwork-live.com orangeftw.com hornet.com wuwatracker.com lobehub.com download.visualstudio.microsoft.com mcpmarket.com kimi.ai freellm.net stytch.com groq.com cursor.com ovhcloud.com llm7.io openrouter.ai deepgram.com mistral.ai devin.ai bluesminds.com deepinfra.com freebuff.com context7.com nousresearch.com petdex.dev nvidia.com bsky.app theblowers.com gethornet.com hnetforever.com gthrnt.com hornetapp.com hornetx.com unicornbooty.com quickies.gay queerspaces.com hnetworkmedia.com d3szda2mljgdyp.cloudfront.net hornetapp.app claimhornet.com cantstopthehnt.com"
+    },
+    "cfg076a7c": {
+      ".anonymous": true,
+      ".type": "subscription_url",
+      ".name": "cfg076a7c",
+      ".index": 6,
+      "section": "main",
+      "url": "https://sub.example.com/REDACTED",
+      "subscription_update_enabled": "1",
+      "subscription_update_interval": "1h",
+      "download_via_proxy_enabled": "0",
+      "auto_user_agent": "1",
+      "auto_hwid": "1",
+      "show_dashboard_metadata": "1",
+      "prefix_nodes": "0",
+      "include_urltest_groups": "1",
+      "hide_urltest_group_outbounds": "1",
+      "hide_detour_outbounds": "1"
+    },
+    "cfg082898": {
+      ".anonymous": true,
+      ".type": "urltest",
+      ".name": "cfg082898",
+      ".index": 7,
+      "section": "main",
+      "name": "тест",
+      "check_interval": "1m",
+      "tolerance": "50",
+      "testing_url": "https://www.gstatic.com/generate_204",
+      "idle_timeout": "30m",
+      "interrupt_exist_connections": "1",
+      "pin_dashboard": "1",
+      "filter_mode": "exclude",
+      "detect_server_country": "flag_emoji",
+      "exclude_countries": [
+        "RU"
+      ],
+      "exclude_proxy_parameters": "0"
+    },
+    "cfg096a7c": {
+      ".anonymous": true,
+      ".type": "subscription_url",
+      ".name": "cfg096a7c",
+      ".index": 8,
+      "section": "exclusion",
+      "url": "https://sub.example.com/REDACTED",
+      "subscription_update_enabled": "1",
+      "subscription_update_interval": "1h",
+      "download_via_proxy_enabled": "0",
+      "auto_user_agent": "1",
+      "auto_hwid": "1",
+      "show_dashboard_metadata": "1",
+      "prefix_nodes": "0",
+      "include_urltest_groups": "1",
+      "hide_urltest_group_outbounds": "1",
+      "hide_detour_outbounds": "1"
+    },
+    "cfg0a2898": {
+      ".anonymous": true,
+      ".type": "urltest",
+      ".name": "cfg0a2898",
+      ".index": 9,
+      "section": "exclusion",
+      "name": "тест2",
+      "check_interval": "10m",
+      "tolerance": "100",
+      "testing_url": "https://captive.apple.com",
+      "idle_timeout": "30m",
+      "interrupt_exist_connections": "1",
+      "pin_dashboard": "1",
+      "filter_mode": "mixed",
+      "detect_server_country": "flag_emoji",
+      "include_countries": [
+        "RU"
+      ],
+      "include_proxy_parameters": "0",
+      "exclude_proxy_parameters": "0"
+    }
+  }
+}

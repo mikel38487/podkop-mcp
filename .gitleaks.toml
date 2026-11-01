@@ -1,0 +1,24 @@
+# Gitleaks configuration for podkop-mcp.
+#
+# The default rule set is extended, not replaced: no rules are disabled and no
+# whole files are excluded. The allowlist below is deliberately narrow - it
+# matches only the two synthetic fixtures in tests/unit/test_config_core.py:
+#
+#   1. a fake OpenSSH private key stub: "-----BEGIN OPENSSH PRIVATE KEY-----"
+#      with an "AAAA" body (the literal \n sequences are part of the Python
+#      string, not a real PEM file);
+#   2. the base64 encoding of "direct-secret" used as the key_b64 fixture.
+#
+# Both are test data, not real credentials.
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Synthetic test fixtures in tests/unit/test_config_core.py; not real secrets."
+regexes = [
+  # Fake PEM stub: -----BEGIN OPENSSH PRIVATE KEY-----\nAAAA\n-----END OPENSSH PRIVATE KEY-----
+  '''^-----BEGIN OPENSSH PRIVATE KEY-----\\nAAAA\\n-----END OPENSSH PRIVATE KEY-----''',
+  # base64("direct-secret") used as the key_b64 fixture
+  '''^ZGlyZWN0LXNlY3JldA==$''',
+]

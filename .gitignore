@@ -1,0 +1,31 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+mcp.local.json
+*.local.json
+.ssh/
+*.pem
+
+# Smoke-test temporary directories
+podkop-mcp-smoke-*/
+
+# Local Docker SSH harness (keys, env, known_hosts)
+.tmp/
+tests/docker/rootfs.tar
+
+# Research snapshots copied from upstream (not redistributed)
+research/
