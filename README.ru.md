@@ -1,9 +1,11 @@
 # podkop-mcp
 
+**Языки:** [English](https://github.com/mikel38487/podkop-mcp/blob/main/README.md) · [Русский](https://github.com/mikel38487/podkop-mcp/blob/main/README.ru.md)
+
 <!-- mcp-name: io.github.mikel38487/podkop-mcp -->
 
 [![CI](https://github.com/mikel38487/podkop-mcp/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/mikel38487/podkop-mcp/actions/workflows/ci.yml)
-[![PyPI](https://img.shields.io/pypi/v/podkop-mcp)](https://pypi.org/project/podkop-mcp/)
+[![PyPI](https://img.shields.io/pypi/v/podkop-mcp?logo=pypi&logoColor=white)](https://pypi.org/project/podkop-mcp/)
 [![Версии Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13%20%7C%203.14-blue)](https://github.com/mikel38487/podkop-mcp/blob/main/pyproject.toml)
 [![Лицензия: MIT](https://img.shields.io/badge/license-MIT-green)](https://github.com/mikel38487/podkop-mcp/blob/main/LICENSE)
 
